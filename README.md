@@ -1,7 +1,7 @@
 # Trip-mangement
 
 ## Overview
-Smart Trip Management System is a command-line application written in C++. 
+Smart Trip Management System is a command-line application written in C++.
 </br>
 It provides functionalities for managing customer details, booking cabs, making hotel reservations, and generating receipts for charges incurred.
 
