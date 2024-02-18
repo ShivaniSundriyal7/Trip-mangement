@@ -64,11 +64,17 @@ public:
             {
                 cout << "File Error!" << endl;
             }
-            while(!(in.eof()))
+
+            string line;
+            while (getline(in, line))
             {
-                in.getline(all, 999);
-                cout << all << endl;
+                cout << line << endl;
             }
+            // while(!(in.eof()))
+            // {
+            //     in.getline(all, 999);
+            //     cout << all << endl;
+            // }
             in.close();
         }
     }
@@ -87,7 +93,7 @@ public:
     void cabDetails()
     {
         cout << "We collaborated with fastest, safest, and smartest cab service arround the country" << endl;
-        cout << "-----------ABC Cabs-----------\n" << endl;
+        cout << "-----------Smart Cabs-----------\n" << endl;
         cout << "1. Rent a Standard Cab - Rs.15 for 1KM" << endl;
         cout << "2. Rent a Luxury Cab - Rs.25 per 1KM" << endl;
 
@@ -380,7 +386,7 @@ void menu() //menu function contain main menu
     int mainChoice;
     int inChoice;
     int gotoMenu;
-    cout << "\t\t      * ABC Travels *\n" << endl;
+    cout << "\t\t      * Smart Travels *\n" << endl;
     cout << "-------------------------Main Menu--------------------------" << endl;
 
     cout << "\t _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ " << endl;
@@ -449,7 +455,7 @@ void menu() //menu function contain main menu
         cout << "-->Get your receipt<--\n" << endl;
         a5.printBill();
         cout << "Your receipt is already printed you can get it from file path\n" << endl;
-        cout << "to display the your receipt in the screen, Enter 1: or Enter another key to back main menu: ";
+        cout << "to display the your receipt in the screen, Enter 1: or Enter another key to get back to main menu: ";
         cin >> gotoMenu;
         if(gotoMenu == 1){
             system("CLS");

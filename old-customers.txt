@@ -1,0 +1,7 @@
+
+Customer ID: 0
+Name: 
+Age: 9
+Mobile Number: 10
+Address: 
+Gender: 
